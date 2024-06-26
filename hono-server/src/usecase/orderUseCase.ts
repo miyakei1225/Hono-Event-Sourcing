@@ -1,5 +1,5 @@
-import { CreateInput, CreateOutput } from "./create"
+import type{ CreateInput, CreateOutput } from "./create"
 
-type OrderUseCase = {
+export interface OrderUseCase {
     create(input: CreateInput): Promise<CreateOutput>
 }
